@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-ibm: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-ibm-mono: "IBM Plex Mono", monospace;
+  }
+
+  body {
+    font-family: var(--font-ibm);
+    background-color: #f9f9ff;
+    color: #191c21;
+    min-height: max(884px, 100dvh);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom design system utilities */
+.font-display-lg {
+  font-family: var(--font-ibm);
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .font-display-lg {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.font-headline-md {
+  font-family: var(--font-ibm);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.font-arrival-time {
+  font-family: var(--font-ibm);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.font-body-lg {
+  font-family: var(--font-ibm);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-ibm);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-label-bold {
+  font-family: var(--font-ibm);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.font-label-sm {
+  font-family: var(--font-ibm);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+/* Transit theme custom colors */
+.bg-primary-app {
+  background-color: #003f87;
+}
+
+.text-primary-app {
+  color: #003f87;
+}
+
+.bg-primary-container-app {
+  background-color: #0056b3;
+}
+
+.text-on-primary-container-app {
+  color: #bbd0ff;
+}
+
+.bg-arrival-now {
+  background-color: #1B5E20;
+}
+
+.text-arrival-now {
+  color: #1B5E20;
+}
+
+.bg-arrival-soon {
+  background-color: #C43E00;
+}
+
+.text-arrival-soon {
+  color: #C43E00;
+}
+
+.bg-surface-variant-app {
+  background-color: #F2F2F7;
+}
+
+.bg-surface-container-low-app {
+  background-color: #f2f3fc;
+}
+
+.bg-surface-container-lowest-app {
+  background-color: #ffffff;
+}
+
+.bg-secondary-container-app {
+  background-color: #a0f399;
+}
+
+.text-on-secondary-container-app {
+  color: #217128;
+}
+
+.text-on-surface-variant-app {
+  color: #424752;
+}
+
+.text-tertiary-app {
+  color: #722b00;
+}
+
+.bg-tertiary-app {
+  background-color: #722b00;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c2c6d4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #79747E;
+}

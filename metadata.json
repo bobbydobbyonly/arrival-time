@@ -1,0 +1,6 @@
+{
+  "name": "NextRide",
+  "description": "Real-time public transit arrival tracker for bus stops and MRT stations with live countdowns and pinned favorites.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
